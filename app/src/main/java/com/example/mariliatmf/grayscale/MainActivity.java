@@ -144,7 +144,6 @@ public class MainActivity extends AppCompatActivity {
     private void gray() {
         File imgFile = new File(mCurrentPhotoPath);
         if (imgFile.exists()) {
-            //Log.v("AAAAA","ska");
             mbitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
             ImageView myImage = (ImageView) findViewById(R.id.pro);
             myImage.setImageBitmap(mbitmap);
